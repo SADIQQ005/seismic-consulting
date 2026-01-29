@@ -1,0 +1,48 @@
+export function PopularStores() {
+  const stores = [
+    { name: 'Adidas', logo: '/adidas.png' },
+    { name: 'Chanel', logo: '/chanel.png' },
+    { name: 'Nike', logo: '/nike.png' },
+    { name: 'Chanel', logo: '/chanel.png' },
+    { name: 'Amazon', logo: '/amazon.png' },
+    { name: 'eBay', logo: '/ebay.png' },
+    { name: 'The North Face', logo: '/north.png' },
+    { name: 'Amazon', logo: '/amazon.png' },
+  ]
+
+  return (
+    <section className="py-16 px-4 bg-background">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <div className="inline-flex bg-accent px-4 py-2 rounded-full mb-4">
+            <span className="text-xs font-medium">Popular Stores</span>
+          </div>
+
+          <h3 className="text-3xl md:text-4xl font-[500] mb-6">
+            Top Stores Nigerians Shop From
+          </h3>
+
+          <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
+            Shop from trusted international brands across fashion, electronics,
+            home, and more. We handle delivery from abroad to Nigeria.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          {stores.map((store, idx) => (
+            <div
+              key={idx}
+              className="h-32 bg-muted rounded-2xl flex items-center justify-center"
+            >
+              <img
+                src={store.logo}
+                alt={store.name}
+                className="h-10 md:h-12 opacity-90"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
