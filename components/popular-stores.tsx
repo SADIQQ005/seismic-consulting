@@ -1,22 +1,16 @@
 import Image from "next/image";
-import adidas from "../public/adidas.png";
-import chanel from "../public/chanel.png";
-import nike from "../public/nike.png";
-import amazon from "../public/amazon.png";
-import ebay from "../public/ebay.png";
-import north from "../public/north.png";
 
 export function PopularStores() {
   const stores = [
-    { name: 'Adidas', logo: adidas },
-    { name: 'Chanel', logo: chanel },
-    { name: 'Nike', logo: nike },
-    { name: 'Chanel', logo: chanel },
-    { name: 'Amazon', logo: amazon },
-    { name: 'eBay', logo: ebay },
-    { name: 'The North Face', logo: north },
-    { name: 'Amazon', logo: amazon },
-  ]
+    { name: "Adidas", logo: "/adidas.png" },
+    { name: "Chanel", logo: "/chanel.png" },
+    { name: "Nike", logo: "/nike.png" },
+    { name: "Chanel", logo: "/chanel.png" },
+    { name: "Amazon", logo: "/amazon.png" },
+    { name: "eBay", logo: "/ebay.png" },
+    { name: "The North Face", logo: "/north.png" },
+    { name: "Amazon", logo: "/amazon.png" },
+  ];
 
   return (
     <section className="py-16 px-4 bg-background">
@@ -55,5 +49,5 @@ export function PopularStores() {
         </div>
       </div>
     </section>
-  )
+  );
 }
