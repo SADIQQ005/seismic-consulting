@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-background px-4 ">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-background px-4 pt-15">
       <div className="w-full max-w-6xl">
         {/* Header */}
         <div className="text-center mb-12">
