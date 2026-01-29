@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-background px-4 pt-15">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-background px-4 ">
       <div className="w-full max-w-6xl">
         {/* Header */}
         <div className="text-center mb-12">
@@ -41,16 +41,15 @@ export function Hero() {
           }
         }
         .carousel-item:nth-child(1) {
-        transform: translateX(-190px) translateY(20px) rotateY(15deg) rotateZ(-8deg);
-          transform: translateX(-300px) translateY(-30px) rotateY(25deg) rotateZ(-12deg);
+          transform: translateX(-360px) translateY(-30px) rotateY(25deg) rotateZ(-12deg);
           z-index: 1;
         }
         .carousel-item:nth-child(2) {
-          transform: translateX(-190px) translateY(20px) rotateY(15deg) rotateZ(-8deg);
+          transform: translateX(-240px) translateY(20px) rotateY(15deg) rotateZ(-8deg);
           z-index: 2;
         }
         .carousel-item:nth-child(3) {
-          transform: translateX(-95px) translateY(-20px) rotateY(8deg) rotateZ(-4deg);
+          transform: translateX(-120px) translateY(-20px) rotateY(8deg) rotateZ(-4deg);
           z-index: 3;
         }
         .carousel-item:nth-child(4) {
@@ -58,15 +57,15 @@ export function Hero() {
           z-index: 4;
         }
         .carousel-item:nth-child(5) {
-          transform: translateX(95px) translateY(-20px) rotateY(-8deg) rotateZ(4deg);
+          transform: translateX(120px) translateY(-20px) rotateY(-8deg) rotateZ(4deg);
           z-index: 3;
         }
         .carousel-item:nth-child(6) {
-          transform: translateX(190px) translateY(20px) rotateY(-15deg) rotateZ(8deg);
+          transform: translateX(240px) translateY(20px) rotateY(-15deg) rotateZ(8deg);
           z-index: 2;
         }
         .carousel-item:nth-child(7) {
-          transform: translateX(300px) translateY(-30px) rotateY(-25deg) rotateZ(12deg);
+          transform: translateX(360px) translateY(-30px) rotateY(-25deg) rotateZ(12deg);
           z-index: 1;
         }
       `}</style>
