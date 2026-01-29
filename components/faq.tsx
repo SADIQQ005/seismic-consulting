@@ -31,9 +31,9 @@ export function FAQ() {
           <div className="inline-block bg-accent px-4 py-2 rounded-full mb-4">
             <span className="text-xs font-medium text-foreground">Built for You</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h3 className="text-3xl md:text-4xl font-[500] text-foreground mb-4">
             FAQs
-          </h2>
+          </h3>
           <p className="text-sm text-muted-foreground">
             Focused on your needs, our team delivers solutions to ensure<br className="hidden md:block" />
             adequate and secure buy and ship to Nigeria.
