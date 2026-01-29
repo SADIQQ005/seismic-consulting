@@ -1,10 +1,10 @@
 export function PopularStores() {
   const stores = [
-    { name: 'Adidas', logo: '/didas.png' },
+    { name: 'Adidas', logo: '/adidas.png' },
     { name: 'Chanel', logo: '/chanel.png' },
     { name: 'Nike', logo: '/nike.png' },
-    { name: 'Chanel', logo: '/Chanel.png' },
-    { name: 'Amazon', logo: '/Amazon.png' },
+    { name: 'Chanel', logo: '/chanel.png' },
+    { name: 'Amazon', logo: '/amazon.png' },
     { name: 'eBay', logo: '/ebay.png' },
     { name: 'The North Face', logo: '/north.png' },
     { name: 'Amazon', logo: '/amazon.png' },
