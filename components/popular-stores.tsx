@@ -1,19 +1,21 @@
 import Image from "next/image";
-import adidas from "@/public/adidas.png";
-import chanel from "@/public/chanel.png";
-import nike from "@/public/nike.png";
-import amazon from "@/public/amazon.png";
-import ebay from "@/public/ebay.png";
-import north from "@/public/north.png";
+import adidas from "../public/adidas.png";
+import chanel from "../public/chanel.png";
+import nike from "../public/nike.png";
+import amazon from "../public/amazon.png";
+import ebay from "../public/ebay.png";
+import north from "../public/north.png";
 
 export function PopularStores() {
   const stores = [
     { name: 'Adidas', logo: adidas },
     { name: 'Chanel', logo: chanel },
     { name: 'Nike', logo: nike },
+    { name: 'Chanel', logo: chanel },
     { name: 'Amazon', logo: amazon },
     { name: 'eBay', logo: ebay },
     { name: 'The North Face', logo: north },
+    { name: 'Amazon', logo: amazon },
   ]
 
   return (
@@ -36,7 +38,10 @@ export function PopularStores() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           {stores.map((store, idx) => (
-            <div key={idx} className="h-32 bg-muted rounded-2xl flex items-center justify-center">
+            <div
+              key={idx}
+              className="h-32 bg-muted rounded-2xl flex items-center justify-center"
+            >
               <Image
                 src={store.logo}
                 alt={store.name}
