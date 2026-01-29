@@ -94,40 +94,21 @@ npm start
 
 ## Key Assumptions & Design Decisions
 
-### 1. **Image Sourcing**
-- Product images in hero carousel use Unsplash URLs for demonstration
-- Persona photos (who is this for) use Unsplash images
-- In production, replace with actual product/service photography
-
-### 2. **Emoji Icons**
-- Used emoji as placeholders for feature icons (📦, 🚚, 💰, etc.)
-- In production, replace with proper SVG icons from a design system
-
-### 3. **Brand Logos**
-- Popular stores section uses emoji symbols as placeholder logos
-- Real implementation should use actual brand SVG logos (Adidas, Chanel, Nike, etc.)
-
-### 4. **Color System**
+### 1. **Color System**
 - Primary: Dark teal (#377C77) - used for buttons and interactive elements
 - Accent: Cyan/turquoise - used for badges and highlights
 - Background: Off-white - main page background
 - Text: Dark gray/black - high contrast for readability
 
-### 5. **Responsive Design**
+### 2. **Responsive Design**
 - Desktop: Full multi-column layouts
 - Tablet: 2-column grids
 - Mobile: Single column with full-width components
-- Navigation collapses on mobile (hidden menu items)
 
-### 6. **Interactivity**
+### 3. **Interactivity**
 - FAQ accordion uses React useState for expand/collapse
 - Navigation links scroll to section IDs (no actual pages)
 - Buttons are styled as CTAs with hover states
-
-### 7. **Performance**
-- No external API calls or data fetching
-- Static content rendered at build time
-- Optimized images via Next.js Image component (where applicable)
 
 ## Customization Guide
 
@@ -142,17 +123,6 @@ Edit `/app/globals.css` and update the CSS custom properties:
 }
 ```
 
-### Update Brand Name
-Replace "Brand Name" in `/components/navbar.tsx` with your actual brand name.
-
-### Add Real Content
-1. Replace placeholder images in components with real product/service images
-2. Update text content in each section
-3. Replace emoji icons with proper SVG icons
-
-### Navigation Links
-Update links in `/components/navbar.tsx` to point to actual pages or external URLs.
-
 ## Browser Support
 
 - Chrome/Edge 90+
@@ -166,21 +136,6 @@ Update links in `/components/navbar.tsx` to point to actual pages or external UR
 - **FID** (First Input Delay): < 100ms
 - **CLS** (Cumulative Layout Shift): < 0.1
 
-## Future Enhancements
-
-- [ ] Add real store logo SVGs
-- [ ] Integrate with CMS for dynamic content
-- [ ] Add email capture for newsletter signup
-- [ ] Implement analytics tracking (Google Analytics/Mixpanel)
-- [ ] Add loading animations and transitions
-- [ ] Create subpages (How It Works detail, FAQ detail, etc.)
-- [ ] Add live chat integration
-- [ ] Implement dark mode toggle
-
-## License
-
-This project is created as a demonstration. Modify as needed for your use case.
-
 ## Support
 
 For issues or questions about the implementation, refer to:
@@ -188,6 +143,3 @@ For issues or questions about the implementation, refer to:
 - [TailwindCSS Documentation](https://tailwindcss.com)
 - [shadcn/ui Documentation](https://ui.shadcn.com)
 
----
-
-**Built with v0** - Vercel's AI-powered code generation tool
